@@ -19,7 +19,6 @@ BNF Notation for grammar.
 <variable_declaration> ::=
     int <identifier>
 
-
 <arith_op> ::=
     <arith_op> + <relation> |
     <arith_op> - <relation> |
