@@ -1,0 +1,5 @@
+LDA 2
+ADD 1
+SUB 1
+JMP 1
+OUT
