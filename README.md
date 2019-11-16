@@ -48,10 +48,10 @@ BNF Notation for grammar.
 Current instruction set
 
 ```
-LDA n
-ADD n
-SUB n
-JMP address
-JE address
+LDA [n]
+ADD [n]
+SUB [n]
+JMP [address]
+JE [address
 OUTAß
 ```
