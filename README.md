@@ -53,5 +53,5 @@ ADD [n]
 SUB [n]
 JMP [address]
 JE [address
-OUTAß
+OUTA
 ```
