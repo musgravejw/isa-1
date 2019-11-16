@@ -2,6 +2,8 @@
 
 Custom ISA for custom CPU architecture.
 
+# BNF 
+
 BNF Notation for grammar.
 
 ```
@@ -39,4 +41,17 @@ BNF Notation for grammar.
 
 <number> ::=
     [0-9][0-9_]*[.[0-9_]*]?
+```
+
+# ISA
+
+Current instruction set
+
+```
+LDA n
+ADD n
+SUB n
+JMP address
+JE address
+OUTAß
 ```
