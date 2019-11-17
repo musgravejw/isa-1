@@ -2,7 +2,20 @@
 
 Custom ISA for custom CPU architecture.
 
-# BNF 
+## ISA
+
+Current instruction set for target achitecture.
+
+```
+LDA [n]
+ADD [n]
+SUB [n]
+JMP [address]
+JE [address
+OUTA
+```
+
+## Grammar
 
 BNF Notation for grammar.
 
@@ -18,6 +31,25 @@ BNF Notation for grammar.
 
 <variable_declaration> ::=
     int <identifier>
+
+<statement> ::=
+    <assignment_statement> |
+    <if_statement> |
+    <loop_statement> |
+    <return_statement>
+
+<assignment_statement> ::=
+    <destination> := <expression>
+
+<if_statement> ::=
+    if ( <expression> ) then ( <statement> ; )+
+    [ else ( <statement> ; )+ ]
+    end if
+
+<loop_statement> ::=
+    for ( <assignment_statement> ; <expression> )
+        ( <statement> ; )*
+    end for
 
 <arith_op> ::=
     <arith_op> + <relation> |
@@ -42,15 +74,16 @@ BNF Notation for grammar.
     [0-9][0-9_]*[.[0-9_]*]?
 ```
 
-# ISA
-
-Current instruction set
 
 ```
-LDA [n]
-ADD [n]
-SUB [n]
-JMP [address]
-JE [address
-OUTA
+.
+├── README.md
+├── src
+│   └── parser.c
+└── tests
+    ├── target.asm
+    └── test.c
+
+2 directories, 4 files
 ```
+
