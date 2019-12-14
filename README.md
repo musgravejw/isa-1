@@ -87,3 +87,7 @@ BNF Notation for grammar.
 2 directories, 4 files
 ```
 
+
+## License 
+
+  * This project is licensed under a BSD 3-Clause License
