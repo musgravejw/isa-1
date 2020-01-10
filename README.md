@@ -7,50 +7,53 @@ Custom ISA for custom CPU architecture.
 
 Current instruction set for target achitecture:
 
-[LDA](#LDA)
-
-[ADD](#ADD)
-
-[SUB](#SUB)
-
-[JMP](#JMP)
-
-[JE](#JE)
-
-[OUTA](#OUTA)
+- [LDA](#LDA)
+- [ADD](#ADD)
+- [SUB](#SUB)
+- [JMP](#JMP)
+- [JE](#JE)
+- [OUTA](#OUTA)
 
 
 ### LDA
+Load a value into the A register.
 ```
 LDA [n]
 ```
 
 ### ADD
+Store a value in the A register, add to a value in the B register.
 ```
 ADD [n]
 ```
 
 ### SUB
+Store a value in the A register, subtract from the value in the B register.
 ```
 SUB [n]
 ```
 
 ### JMP
+Unconditional jump instruction to a program address.
 ```
 JMP [address]
 ```
 
 ### JE
+Conditional jump instruction.
 ```
 JE [address]
 ```
 
 ### OUTA
+Output the value of the A register to the display device.
 ```
 OUTA
 ```
 
 # High Level Language
+
+## Grammar
 
 Backus-Naur Form notation for higher level grammar.
 
