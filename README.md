@@ -1,23 +1,58 @@
-# isa-1
+# ISA-1
 
 Custom ISA for custom CPU architecture.
 
-## ISA
 
-Current instruction set for target achitecture.
+## Instruction Set
 
+Current instruction set for target achitecture:
+
+[LDA](#LDA)
+
+[ADD](#ADD)
+
+[SUB](#SUB)
+
+[JMP](#JMP)
+
+[JE](#JE)
+
+[OUTA](#OUTA)
+
+
+### LDA
 ```
 LDA [n]
+```
+
+### ADD
+```
 ADD [n]
+```
+
+### SUB
+```
 SUB [n]
+```
+
+### JMP
+```
 JMP [address]
-JE [address
+```
+
+### JE
+```
+JE [address]
+```
+
+### OUTA
+```
 OUTA
 ```
 
-## Grammar
+# High Level Language
 
-BNF Notation for grammar.
+Backus-Naur Form notation for higher level grammar.
 
 ```
 <expression> ::=
@@ -74,20 +109,8 @@ BNF Notation for grammar.
     [0-9][0-9_]*[.[0-9_]*]?
 ```
 
-
-```
-.
-├── README.md
-├── src
-│   └── parser.c
-└── tests
-    ├── target.asm
-    └── test.c
-
-2 directories, 4 files
-```
-
+## Author
+This project was written by John Musgrave.
 
 ## License 
-
-  * This project is licensed under a BSD 3-Clause License
+This project is licensed under a BSD 3-Clause License
